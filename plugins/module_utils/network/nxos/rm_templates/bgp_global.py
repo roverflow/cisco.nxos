@@ -44,7 +44,6 @@ def _tmplt_path_attribute(proc):
 def _tmplt_bfd(proc):
     bfd = proc.get("bfd", {})
     cmd = None
-
     if bfd.get("set"):
         cmd = "bfd"
     if bfd.get("singlehop"):
